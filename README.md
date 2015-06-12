@@ -1,7 +1,7 @@
 # URLShortener
 
 Requer:
-  - Python 3.4
+  - Python 2.7.9
   - Django 1.8
 
-Hospedado em: http://vfsf-urlshort.herokuapp.com/ (Python 2.7.9)
+Hospedado em: http://vfsf-urlshort.herokuapp.com/
