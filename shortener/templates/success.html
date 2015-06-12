@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    
+{% endblock %}
+
+{% block content %}
+    Your Shortened URL is: <a href="{% url 'redirect' request.GET.link %}">{% url 'redirect' request.GET.link %}</a>
+{% endblock %}

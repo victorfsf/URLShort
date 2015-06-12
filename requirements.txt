@@ -1,0 +1,2 @@
+django==1.8
+-e git://github.com/ericholscher/django-crawler#egg=crawler
