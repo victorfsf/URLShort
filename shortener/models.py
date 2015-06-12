@@ -5,6 +5,6 @@ class URLBase(models.Model):
     
     link = models.URLField()
     
-    def __str__(self):
+    def __unicode__(self):
         return self.link
         
