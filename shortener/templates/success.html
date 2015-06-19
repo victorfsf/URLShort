@@ -1,9 +1,27 @@
 {% extends 'base.html' %}
 
 {% block title %}
-    
+    Success! - URL Shortener
+{% endblock %}
+
+{% block body %}
 {% endblock %}
 
 {% block content %}
-    Your Shortened URL is: <a href="{% url 'redirect' request.GET.link %}">{% url 'redirect' request.GET.link %}</a>
+    <div class="content-spacing">
+        <div class="col-lg-6 col-md-8 col-sm-12 col-xs-12 col-center">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <legend>Success!</legend>
+                    <div class="success-panel">
+                        <h4>Your Shortened URL is:</h4>
+                        <h3><a href="{% url 'redirect' request.GET.link %}">
+                            http://{{ host }}{% url 'redirect' request.GET.link %}
+                        </a></h3>
+                    </div>
+                </div>
+                <a href="{% url 'index' %}" class="panel-footer btn btn-default btn-footer">Go Back</a>
+            </div>
+        </div>
+    </div>
 {% endblock %}

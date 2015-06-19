@@ -25,12 +25,10 @@ class StoreURL(FormView):
         self.success_url = reverse('success') + '?link=' + util.to_base62(url_check.pk)
         
         return super(StoreURL, self).form_valid(form)
-    
-    
+
     def form_invalid(self, form):
         return super(StoreURL, self).form_invalid(form)
-    
-    
+
     def get_context_data(self, **kwargs):
         context = super(StoreURL, self).get_context_data(**kwargs)
         return context
@@ -38,15 +36,17 @@ class StoreURL(FormView):
 
 class GenerateURL(TemplateView):
     template_name = 'success.html'
-    
-    
+
     def get_context_data(self, **kwargs):
-        context = super(GenerateURL, self).get_context_data(**kwargs)      
+        context = super(GenerateURL, self).get_context_data(**kwargs)
+
+        context['host'] = self.request.get_host()
+
         return context
 
 
 class RedirectURL(View):
-    
+
     def get(self, request, *args, **kwargs):
         short_id = self.kwargs['short_id']
         url_base = get_object_or_404(URLBase, pk=util.from_base62(short_id))

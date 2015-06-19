@@ -1,0 +1,75 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
+
+
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    background: #f9f9f9;
+}
+
+textarea {
+   resize: none;
+}
+
+.content-spacing {
+    margin-top: 100px;
+}
+
+.btn-footer {
+    width: 100%;
+    margin-bottom: -14px;
+    border: 0;
+}
+
+.panel-default {
+    border: 2px solid #eee;
+}
+
+.panel-default legend {
+    font-weight: 700;
+}
+
+.panel-default .panel-body {
+	padding: 22px;
+}
+
+.form-control,
+.panel-default,
+.panel-default .panel-heading,
+.panel-default .panel-footer {
+	border-radius: 0;
+}
+
+.btn-default {
+    background-color: #398439;
+    color: #fff;
+    font-weight: 700;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active {
+    background-color: #399439;
+    color: #fff;
+}
+
+.alert-danger {
+    margin-bottom: -5px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 0;
+}
+
+.close {
+    margin-right: 22px;
+}
+
+.success-panel {
+    text-align: center;
+}
+
+.col-center {
+    display: block;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
